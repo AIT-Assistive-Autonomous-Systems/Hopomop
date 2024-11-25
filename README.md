@@ -3,6 +3,8 @@ This repository contains the code for the paper "Few-shot Structure-Informed Mac
 
 There is the possiblity to try the code on a few images of the synthetic truck dataset(anonymized) found in ''data/test_data''.
 
+<video controls src="img/Video.mp4" title="Title"></video>
+
 ## Installation
 There is a convinient way of using Docker Devcontainers to run the code in a safe envorioment. Make sure to have installed docker(including nvidia docker) and the vscode extension 'Dev Containers' and open the devcontainer. It will install all necessary tools and scripts.
 
