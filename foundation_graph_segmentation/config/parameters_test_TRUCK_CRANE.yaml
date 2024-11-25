@@ -1,0 +1,39 @@
+
+# Training
+epochs: 750
+step_size: 250
+batch_size: 1
+learning_rate: 0.01
+loss_type: NLLLoss # [CrossEntropyLoss, NLLLoss]
+
+# Classification
+dropouts: 0.1
+dropouts_edge: 0.5
+graph_neighbours: 16 # how many neighbours should be considered in the graph
+hidden_dim: 512 # hidden dimension of the model
+integration_dim: 256 # dim between graph and dense layers
+min_points: 1024 # minimum points sampled from superpoint
+model_type: SAGE # model type [SAGE, GAT, GCN]
+nms_radius: 4 # radius for non-maximum suppression
+super_glue_threshold: 0.0002 # threshold for superglue
+
+# Segmentation
+sam_point_samples: 15 # how many points should be sampled by sam out of the graph
+sam_promt_type: pointbox # which promts should be passed into SAM [point, box, pointbox]
+box_threshold: 0.6 # [distance threshold for box creation out of poitns[1: keep all points, 0: no points]]
+point_threshold: 0.6 # [distance threshold for poitns[1: keep all points, 0: no points]]
+fps: True
+
+# Shared
+use_clip_seg_features: True # use clip features enhancement
+use_position_features: False # use position features enhancement
+clip_seg_prompt: [truck, crane] # clip prompt for the enhanced features
+
+dataset_type: truck
+subject_id: TRUCK_CRANE # dataset subject id
+data_dir: ../data/test_data
+
+augment: False
+ 
+checkpoint_path: checkpoints/TRUCK_CRANE.pth
+image_indices: [0, 1, 2, 3, 4, 5]

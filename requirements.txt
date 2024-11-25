@@ -1,0 +1,23 @@
+numpy
+opencv-python
+
+# geometric
+torch-geometric
+transformers==4.38.2
+torchmetrics
+# other
+colorcet
+matplotlib
+scikit-learn
+scikit-image
+Pillow
+tqdm
+
+albumentations==1.3.0
+pydantic==1.10.7
+networkx
+
+fpsample
+timm
+
+seaborn
