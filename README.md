@@ -1,6 +1,39 @@
-# HOPOMOP (Hundreds of points over millions of pixels)
-This repository contains the code for the paper "Few-shot Structure-Informed Machinery Part Segmentation with Foundation Models and Graph Neural Networks".
+[![Contributors][contributors-shield]][contributors-url]
+[![Forks][forks-shield]][forks-url]
+[![Stargazers][stars-shield]][stars-url]
+[![Issues][issues-shield]][issues-url]
+[![MIT License][license-shield]][license-url]
 
+# HOPOMOP (Hundreds of points over millions of pixels)
+
+[contributors-shield]: https://img.shields.io/github/contributors/AIT-Assistive-Autonomous-Systems/Hopomop.svg?style=for-the-badge
+[contributors-url]: https://github.com/AIT-Assistive-Autonomous-Systems/Hopomop/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/AIT-Assistive-Autonomous-Systems/Hopomop.svg?style=for-the-badge
+[forks-url]: https://github.com/AIT-Assistive-Autonomous-Systems/Hopomop/network/members
+[stars-shield]: https://img.shields.io/github/stars/AIT-Assistive-Autonomous-Systems/Hopomop.svg?style=for-the-badge
+[stars-url]: https://github.com/AIT-Assistive-Autonomous-Systems/Hopomop/stargazers
+[issues-shield]: https://img.shields.io/github/issues/AIT-Assistive-Autonomous-Systems/Hopomop.svg?style=for-the-badge
+[issues-url]: https://github.com/AIT-Assistive-Autonomous-Systems/Hopomop/issues
+[license-shield]: https://img.shields.io/github/license/AIT-Assistive-Autonomous-Systems/Hopomop.svg?style=for-the-badge
+[license-url]: https://github.com/AIT-Assistive-Autonomous-Systems/Hopomop/blob/master/LICENSE.txt
+
+<!-- PROJECT LOGO -->
+<br />
+<div align="center">
+  <a href=""https://github.com/AIT-Assistive-Autonomous-Systems/Hopomop">
+    <img src="images/logo.png" alt="Logo" width="80" height="80">
+  </a>
+
+  <p align="center">
+    <a href="https://github.com/AIT-Assistive-Autonomous-Systems/Hopomop">Paper</a>
+    ·
+    <a href="https://github.com/AIT-Assistive-Autonomous-Systems/Hopomop">Video</a>
+    ·
+    <a href="https://github.com/AIT-Assistive-Autonomous-Systems/Hopomop">Try</a>
+  </p>
+</div>
+
+This repository contains the code for the paper "Few-shot Structure-Informed Machinery Part Segmentation with Foundation Models and Graph Neural Networks".
 There is the possiblity to try the code on a few images of the synthetic truck dataset(anonymized) found in ''data/test_data''.
 
 <video controls src="img/Video.mp4" title="Title"></video>
