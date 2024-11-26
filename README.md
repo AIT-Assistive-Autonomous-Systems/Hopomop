@@ -1,4 +1,4 @@
-# HOPOMOP (Hundred points over thousand pixels)
+# HOPOMOP (Hundreds of points over thousands of pixels)
 This repository contains the code for the paper "Few-shot Structure-Informed Machinery Part Segmentation with Foundation Models and Graph Neural Networks".
 
 There is the possiblity to try the code on a few images of the synthetic truck dataset(anonymized) found in ''data/test_data''.
