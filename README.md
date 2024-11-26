@@ -26,3 +26,17 @@ The results will be saved in the ''results'' folder.
 ## Information
 Due to anonymization, the dataset is not fully published. A small part of the training and more test data will be published after the review process.
 
+## Citing Hopomop (Accepted / Submission pending!)
+If you use Hopomop in your research, please use the following BibTeX entry.
+
+```
+@inproceedings{Schwingshackl2025,
+  author       = {Michael Schwingshackl and Fabio Oberweger and Markus Murschitz},
+  title        = {Few-shot Structure-Informed Machinery Part Segmentation with Foundation Models and Graph Neural Networks},
+  booktitle    = {Proceedings of the IEEE/CVF Winter Conference on Applications of Computer Vision (WACV)},
+  year         = {2025},
+  organization = {IEEE},
+  note         = {Presented at WACV 2025},
+}
+```
+
