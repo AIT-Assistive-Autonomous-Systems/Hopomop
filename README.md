@@ -66,6 +66,15 @@ Using Davis Dataset. Trained on First, Middle and Last Frame.
 ## Information
 Due to anonymization, the dataset is not fully published. A small part of the training and more test data will be published after the review process.
 
+
+
+## Meet the Authors 👩‍🔬
+This work was conducted at the [AIT Austrian Institute of Technology](https://www.ait.ac.at/) 🇦🇹 in the [Center for Vision, Automation & Control](https://www.ait.ac.at/en/about-the-ait/center/center-for-vision-automation-control) 🏗️.
+
+- 🖥️ **Michael Schwingshackl** [🔗 Research Profile](https://publications.ait.ac.at/de/persons/michael.Schwingshackl)
+- 🖥️ **Fabio Francisco Oberweger** [🔗 Research Profile](https://publications.ait.ac.at/de/persons/fabio.oberweger)
+- 🖥️ **Markus Murschitz**  [🔗 Research Profile](https://publications.ait.ac.at/de/persons/markus.murschitz)
+
 ## Citing Hopomop (Accepted / Submission pending!)
 If you use Hopomop in your research, please use the following BibTeX entry.
 
