@@ -37,7 +37,9 @@
 This repository contains the code for the paper "Few-shot Structure-Informed Machinery Part Segmentation with Foundation Models and Graph Neural Networks".
 There is the possiblity to try the code on a few images of the synthetic truck dataset(anonymized) found in ''data/test_data''.
 
-<video controls src="img/Video.mp4" title="Title"></video>
+### Architecture
+<img src="images/architecture.png"/>
+
 
 ## Installation
 There is a convinient way of using Docker Devcontainers to run the code in a safe envorioment. Make sure to have installed docker(including nvidia docker) and the vscode extension 'Dev Containers' and open the devcontainer. It will install all necessary tools and scripts.
@@ -60,12 +62,12 @@ The results will be saved in the ''results'' folder.
 ## Results
 ### Semi-Supervised Video Segmentation
 Using Davis Dataset. Trained on First, Middle and Last Frame.
-<img src="images/davis.gif"/>
-
-
-## Information
-Due to anonymization, the dataset is not fully published. A small part of the training and more test data will be published after the review process.
-
+-  One Class
+<img src="images/davis1.gif"/>
+-  Two Classes
+<img src="images/davis2.gif"/>
+-  Multi Classes
+<img src="images/davis3.gif"/>
 
 
 ## Meet the Authors 👩‍🔬
@@ -75,7 +77,7 @@ This work was conducted at the [AIT Austrian Institute of Technology](https://ww
 - 🖥️ **Fabio Francisco Oberweger** [🔗 Research Profile](https://publications.ait.ac.at/de/persons/fabio.oberweger)
 - 🖥️ **Markus Murschitz**  [🔗 Research Profile](https://publications.ait.ac.at/de/persons/markus.murschitz)
 
-## Citing Hopomop (Accepted / Submission pending!)
+## Citing Hopomop
 If you use Hopomop in your research, please use the following BibTeX entry.
 
 ```
