@@ -25,13 +25,14 @@
   </a>
 
   <p align="center">
-    <a href="https://github.com/AIT-Assistive-Autonomous-Systems/Hopomop">Paper</a>
+    <a href="https://arxiv.org/abs/2501.10080">Paper</a>
     ·
     <a href="https://github.com/AIT-Assistive-Autonomous-Systems/Hopomop">Video</a>
     ·
     <a href="https://github.com/AIT-Assistive-Autonomous-Systems/Hopomop">Try</a>
   </p>
 </div>
+
 
 This repository contains the code for the paper "Few-shot Structure-Informed Machinery Part Segmentation with Foundation Models and Graph Neural Networks".
 There is the possiblity to try the code on a few images of the synthetic truck dataset(anonymized) found in ''data/test_data''.
@@ -55,6 +56,12 @@ To run the code on the test images, run the following command. Depending on the 
 ```python3.10 test.py --config_file config/parameters_test_LOW.yaml```: 
 
 The results will be saved in the ''results'' folder. 
+
+## Results
+### Semi-Supervised Video Segmentation
+Using Davis Dataset. Trained on First, Middle and Last Frame.
+<img src="images/davis.gif"/>
+
 
 ## Information
 Due to anonymization, the dataset is not fully published. A small part of the training and more test data will be published after the review process.
