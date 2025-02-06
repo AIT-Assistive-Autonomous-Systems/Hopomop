@@ -64,8 +64,10 @@ The results will be saved in the ''results'' folder.
 Using Davis Dataset. Trained on First, Middle and Last Frame.
 -  One Class
 <img src="images/davis1.gif"/>
+
 -  Two Classes
 <img src="images/davis2.gif"/>
+
 -  Multi Classes
 <img src="images/davis3.gif"/>
 
