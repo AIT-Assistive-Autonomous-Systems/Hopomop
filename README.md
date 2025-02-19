@@ -4,6 +4,7 @@
 [![Issues][issues-shield]][issues-url]
 [![MIT License][license-shield]][license-url]
 
+🏗️🏗️🏗️Attention: This repository is still under construction🏗️🏗️🏗️
 # HOPOMOP (Hundreds Of Points Over Millions Of Pixels)
 
 [contributors-shield]: https://img.shields.io/github/contributors/AIT-Assistive-Autonomous-Systems/Hopomop.svg?style=for-the-badge
@@ -57,7 +58,7 @@ To run the code on the test images, run the following command. Depending on the 
 ```python3.10 test.py --config_file config/parameters_test_LOW.yaml```: 
 
 The results will be saved in the ''results'' folder. 
-### Architecture
+## Architecture
 
 Combination of [SuperPoint](https://github.com/rpautrat/SuperPoint), [CLIPSeg](https://github.com/timojl/clipseg), [Segment Anything](https://github.com/facebookresearch/segment-anything) and Graph Neural Networks.
 <img src="images/architecture.png"/>
@@ -93,9 +94,9 @@ Using Davis Dataset. Trained on First, Middle and Last Frame.
 ## Meet the Authors 👩‍🔬
 This work was conducted at the [AIT Austrian Institute of Technology](https://www.ait.ac.at/) 🇦🇹 in the [Center for Vision, Automation & Control](https://www.ait.ac.at/en/about-the-ait/center/center-for-vision-automation-control) 🏗️.
 
-- 🖥️ **Michael Schwingshackl** [🔗 Research Profile](https://publications.ait.ac.at/de/persons/michael-Schwingshackl)
-- 🖥️ **Fabio Francisco Oberweger** [🔗 Research Profile](https://publications.ait.ac.at/de/persons/fabio.oberweger)
-- 🖥️ **Markus Murschitz**  [🔗 Research Profile](https://publications.ait.ac.at/de/persons/markus.murschitz)
+- 🖥️ **Michael Schwingshackl** [🔗 AIT Research Profile](https://publications.ait.ac.at/de/persons/michael-schwingshackl) [🔗 Google Scholar](https://scholar.google.at/citations?user=fsvMYQYAAAAJ&hl)
+- 🖥️ **Fabio Francisco Oberweger** [🔗 AIT Research Profile](https://publications.ait.ac.at/de/persons/fabio.oberweger) [🔗 Google Scholar](https://scholar.google.at/citations?hl=de&user=njm6I3wAAAAJ)
+- 🖥️ **Markus Murschitz**  [🔗 AIT Research Profile](https://publications.ait.ac.at/de/persons/markus.murschitz) [🔗 Google Scholar](https://scholar.google.at/citations?hl=de&user=S8yQbTQAAAAJ)
 
 ## Citing Hopomop
 If you use Hopomop in your research, please use the following BibTeX entry.
