@@ -59,7 +59,24 @@ To run the code on the test images, run the following command. Depending on the 
 
 The results will be saved in the ''results'' folder. 
 
+## Data
+### Domain Randomization
+Using blender to create synthetic images by randomizing environment, perspective anc crane articulation.
+![](images/domain_randomization.png)
+### Sample
+Rendered video of the synthetic truck with changing perspective and articulation. Right side shows rendering, left side shows segmentation overlay.
+![](images/truck_blender.gif)
+
+
+
+
 ## Results
+### Simulation to Real Transfer
+Training on 10 synthetic images. The synthetic truck-mounted loading crane differs from the real one. The model is able to transfer the knowledge to the real world.
+
+![](images/sim_to_real.gif)
+
+
 ### Semi-Supervised Video Segmentation
 Using Davis Dataset. Trained on First, Middle and Last Frame.
 
@@ -73,7 +90,7 @@ Using Davis Dataset. Trained on First, Middle and Last Frame.
 ## Meet the Authors 👩‍🔬
 This work was conducted at the [AIT Austrian Institute of Technology](https://www.ait.ac.at/) 🇦🇹 in the [Center for Vision, Automation & Control](https://www.ait.ac.at/en/about-the-ait/center/center-for-vision-automation-control) 🏗️.
 
-- 🖥️ **Michael Schwingshackl** [🔗 Research Profile](https://publications.ait.ac.at/de/persons/michael.Schwingshackl)
+- 🖥️ **Michael Schwingshackl** [🔗 Research Profile](https://publications.ait.ac.at/de/persons/michael-Schwingshackl)
 - 🖥️ **Fabio Francisco Oberweger** [🔗 Research Profile](https://publications.ait.ac.at/de/persons/fabio.oberweger)
 - 🖥️ **Markus Murschitz**  [🔗 Research Profile](https://publications.ait.ac.at/de/persons/markus.murschitz)
 
