@@ -25,11 +25,11 @@
   </a>
 
   <p align="center">
-    <a href="https://arxiv.org/abs/2501.10080">Paper</a>
-    ·
+    <a href="https://arxiv.org/abs/2501.10080">Link to Paper</a>
+    <!-- ·
     <a href="https://github.com/AIT-Assistive-Autonomous-Systems/Hopomop">Video</a>
     ·
-    <a href="https://github.com/AIT-Assistive-Autonomous-Systems/Hopomop">Try</a>
+    <a href="https://github.com/AIT-Assistive-Autonomous-Systems/Hopomop">Try</a> -->
   </p>
 </div>
 
@@ -37,8 +37,7 @@
 This repository contains the code for the paper "Few-shot Structure-Informed Machinery Part Segmentation with Foundation Models and Graph Neural Networks".
 There is the possiblity to try the code on a few images of the synthetic truck dataset(anonymized) found in ''data/test_data''.
 
-### Architecture
-<img src="images/architecture.png"/>
+
 
 
 ## Installation
@@ -58,6 +57,10 @@ To run the code on the test images, run the following command. Depending on the 
 ```python3.10 test.py --config_file config/parameters_test_LOW.yaml```: 
 
 The results will be saved in the ''results'' folder. 
+### Architecture
+
+Combination of [SuperPoint](https://github.com/rpautrat/SuperPoint), [CLIPSeg](https://github.com/timojl/clipseg), [Segment Anything](https://github.com/facebookresearch/segment-anything) and Graph Neural Networks.
+<img src="images/architecture.png"/>
 
 ## Data
 ### Domain Randomization
