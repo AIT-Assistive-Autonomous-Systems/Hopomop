@@ -3,8 +3,10 @@ opencv-python
 
 # geometric
 torch-geometric
+
 transformers==4.38.2
 torchmetrics
+
 # other
 colorcet
 matplotlib

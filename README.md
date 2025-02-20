@@ -38,9 +38,6 @@
 This repository contains the code for the paper "Few-shot Structure-Informed Machinery Part Segmentation with Foundation Models and Graph Neural Networks".
 There is the possiblity to try the code on a few images of the synthetic truck dataset(anonymized) found in ''data/test_data''.
 
-
-
-
 ## Installation
 There is a convinient way of using Docker Devcontainers to run the code in a safe envorioment. Make sure to have installed docker(including nvidia docker) and the vscode extension 'Dev Containers' and open the devcontainer. It will install all necessary tools and scripts.
 
@@ -68,13 +65,18 @@ Combination of [SuperPoint](https://github.com/rpautrat/SuperPoint), [CLIPSeg](h
 Using blender to create synthetic images by randomizing environment, perspective anc crane articulation.
 ![](images/domain_randomization.png)
 ### Sample
-Rendered video of the synthetic truck with changing perspective and articulation. Right side shows rendering, left side shows segmentation overlay.
+Rendered video of the synthetic truck with changing perspective, background, lighting and articulation. Right side shows rendering, left side shows segmentation overlay.
 ![](images/truck_blender.gif)
 
 
 
 
 ## Results
+### Few-shot evaluation
+Different granularity and sample sizes. Qualitative results on synthetic truck dataset.
+
+![](images/few_shot_evaluation.png)
+
 ### Simulation to Real Transfer
 Training on 10 synthetic images. The synthetic truck-mounted loading crane differs from the real one. The model is able to transfer the knowledge to the real world.
 
@@ -82,7 +84,7 @@ Training on 10 synthetic images. The synthetic truck-mounted loading crane diffe
 
 
 ### Semi-Supervised Video Segmentation
-Using Davis Dataset. Trained on First, Middle and Last Frame.
+Using [Davis2017](https://davischallenge.org/) Dataset. Trained on First, Middle and Last Frame.
 
 | Segmentation Classes     | Image                  |
 |----------------|------------------------|
