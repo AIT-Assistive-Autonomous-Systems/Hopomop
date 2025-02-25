@@ -4,7 +4,6 @@
 [![Issues][issues-shield]][issues-url]
 [![MIT License][license-shield]][license-url]
 
-🏗️🏗️🏗️Attention: This repository is still under construction🏗️🏗️🏗️
 # HOPOMOP (Hundreds Of Points Over Millions Of Pixels)
 
 [contributors-shield]: https://img.shields.io/github/contributors/AIT-Assistive-Autonomous-Systems/Hopomop.svg?style=for-the-badge
