@@ -133,12 +133,6 @@ Using [Davis2017](https://davischallenge.org/) Dataset. Trained on First, Middle
 ## Meet the Authors 👩‍🔬
 This work was conducted at the [AIT Austrian Institute of Technology](https://www.ait.ac.at/) 🇦🇹 in the [Center for Vision, Automation & Control](https://www.ait.ac.at/en/about-the-ait/center/center-for-vision-automation-control) 🏗️.
 
-- 🖥️ **Michael Schwingshackl**@ait.ac.at [🔗 AIT Research Profile](https://publications.ait.ac.at/de/persons/michael-schwingshackl) [🔗 Google Scholar](https://scholar.google.at/citations?user=fsvMYQYAAAAJ&hl)
-- 🖥️ **Fabio Francisco Oberweger**@ait.ac.at [🔗 AIT Research Profile](https://publications.ait.ac.at/de/persons/fabio.oberweger) [🔗 Google Scholar](https://scholar.google.at/citations?hl=de&user=njm6I3wAAAAJ)
-- 🖥️ **Markus Murschitz**@ait.ac.at [🔗 AIT Research Profile](https://publications.ait.ac.at/de/persons/markus.murschitz) [🔗 Google Scholar](https://scholar.google.at/citations?hl=de&user=S8yQbTQAAAAJ)
-
-## Contact  
-
 | Name & Email                                      | AIT Research Profile | Google Scholar |
 |---------------------------------------------------|----------------------|----------------|
 |👨‍🔬 **Michael Schwingshackl**<br>📧[Michael.Schwingshackl@ait.ac.at](mailto:Michael.Schwingshackl@ait.ac.at) | [🔗 Profile](https://publications.ait.ac.at/de/persons/michael-schwingshackl) | [🔗 Scholar](https://scholar.google.at/citations?user=fsvMYQYAAAAJ&hl) |
