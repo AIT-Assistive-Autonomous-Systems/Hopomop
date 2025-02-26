@@ -183,8 +183,6 @@ def train(config):
             f"Epoch {epoch}, Loss: {loss}, Bal Acc: {metric_bal_acc(output_cat, gt):.3f}, F1: {metric_f1(output_cat, gt):.3f}"
         )
 
-        #torch.save(model.state_dict(), "model.pth")
-
 
 if __name__ == "__main__":
     # Parse command line arguments

@@ -13,6 +13,7 @@ from sklearn.metrics.pairwise import euclidean_distances
 from dataloaders.datasets import ffs_loader
 from dataloaders.datasets import davis_loader
 from dataloaders.datasets import truck_loader
+from dataloaders.datasets import simple_loader
 import albumentations as A
 sys.path.append("foundation_graph_segmentation")
 
@@ -165,14 +166,12 @@ class SegDataset(Dataset):
             self.feature_count += 2
 
         self.device = device
-
         self.train = train
 
         if self.dataset_type == "truck":
             truck_data_loader = truck_loader.AnnotatedImageLoader(image_dir)
             # string to enum subject id
             granularity = truck_loader.AnnotationGranularity[subject_id]
-            
 
         for i in index_list:
             # read imag
@@ -181,6 +180,8 @@ class SegDataset(Dataset):
                 image, label_image = davis_loader.load(image_dir, subject_id, i, all_colors)
             if self.dataset_type == "ffs":
                 image, label_image = ffs_loader.load(image_dir, subject_id, i)
+            if self.dataset_type == "simple":
+                image, label_image = simple_loader.load(image_dir, subject_id, i)
             if self.dataset_type == "truck":
                 image, label_image, _, _ = truck_data_loader.load(i, granularity)
 
@@ -222,23 +223,12 @@ class SegDataset(Dataset):
         # define augmentations
         image_transform = A.Compose(
             [
-                # # Rotate or flip
-                #A.HorizontalFlip(),
                 # Crop and resize back to original size
                 A.RandomResizedCrop(height=image.shape[0], width=image.shape[1], scale=(0.5, 1.0)),
-
-                # # # Color
-                # A.ColorJitter(brightness=0.1, contrast=0.1, saturation=0.1, hue=0.1),
-                # A.RGBShift(r_shift_limit=10, g_shift_limit=10, b_shift_limit=10),   
-
                 # #Brightness and contrast
-                # A.RandomBrightnessContrast(brightness_limit=0.1, contrast_limit=0.1),
-                # A.RandomGamma(gamma_limit=(80, 120)),
-
-                # #Other10
-                # #A.Blur(blur_limit=3),
-                # A.GaussNoise(var_limit=(5.0, 20.0)),
-
+                A.RandomBrightnessContrast(brightness_limit=0.1, contrast_limit=0.1),
+                A.RandomGamma(gamma_limit=(80, 120)),
+                A.GaussNoise(var_limit=(5.0, 20.0)),
             ]
         )
 
@@ -323,14 +313,6 @@ class SegDataset(Dataset):
             clip_seg_feature_summed
         )
 
-        # # get clipseg value for every point
-        # clip_seg_feature_summed1 = clip_seg_feature_summed[points[:, 1], points[:, 0]]
-
-        # # remove points where clipseg < 0.5
-        # points = points[clip_seg_feature_summed1 > 0.3]
-        # features = features[clip_seg_feature_summed1 > 0.3]
-
-
         # apply clipseg features
         if self.use_clip_seg_feature:
             # add clipseg pixel value for every point position to feature vector
@@ -344,10 +326,6 @@ class SegDataset(Dataset):
                 ),
                 dim=1,
             )
-
-        # # remove points where clipseg < 0.5
-        # if self.use_clip_seg_feature:
-
 
         # apply position features
         if self.use_position_feature:

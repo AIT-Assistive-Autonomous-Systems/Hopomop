@@ -25,25 +25,8 @@ import utils.metrics as seg_metrics
 
 import yaml
 
-train_config =  {
-    "nms_radius": 4,
-    "min_points": 2048,
-    "graph_neighbours": 8,
-    "hidden_dim": 1024,
-    "integration_dim": 256,
-    "super_glue_threshold": 0.0002,
-    "model_type": "SAGE",
-    "sam_promt_type": "point",
-    "box_threshold": 1,
-    "point_threshold": 1,
-    "sam_point_samples": 15,
-    "dropouts": 0.1,
-    "dropouts_edge": 0.5,
-    "epochs": 100,
-    "step_size": 50,
-}
 
-def train(config):
+def test(config):
     device = "cuda"
 
     super_glue_threshold = config["super_glue_threshold"]
@@ -58,8 +41,6 @@ def train(config):
 
     clip_seg_prompts = [config["clip_seg_prompt"]]
     # 10 random indices 0-99
-
-    indices = np.random.randint(0, 40, 10)
 
     train_dataset = SegDataset(
     index_list = config["image_indices"],
@@ -165,13 +146,13 @@ if __name__ == "__main__":
 
     args = parser.parse_args()
 
-    train_config = {}
+    test_config = {}
     with open(args.config_file, "r") as f:
-        train_config = yaml.load(f, Loader=yaml.FullLoader)
+        test_config = yaml.load(f, Loader=yaml.FullLoader)
 
-    eval_data = train(train_config)
+    eval_data = test(test_config)
 
-    visualize_segmentation(eval_data, f"../results/output_{train_config['subject_id']}")
+    visualize_segmentation(eval_data, f"../results/output_{test_config['subject_id']}")
     
 
 
